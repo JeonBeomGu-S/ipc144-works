@@ -1,0 +1,10 @@
+I learned about how to make a project, print letters, scan letters and save it in variables from the keyboard from IPC class. For doing an assignment, I have to make a project first, it just creates a new project and selects the empty project. After that, if there is not a .c file, I have to make a new .c file. So, I finished to prepare for an assignment. Now, I will talk about variable, printf, and scanf function. First, variable is space for saving data. There are mainly two types of variables. One of them is an integer type variable, another is a floating type. integer type doesn’t include a floating point, but a floating type includes a floating point. Second, printf function is for printing letters. If you want to print letters, you can use this function with double quotation marks. Third, scanf function is for scanning letters from the keyboard. If you want to scan letters, you can use this function with ampersand marks and double quotation marks. Below are examples of how to declare variable and save and how to use printf and scanf function.
+
+- example of declare and save variable
+    int a; // declare variable.
+    a = 10; // initialize(save) value in variable.
+    
+- example of printf
+    printf(”Hello World!”); // print the sentence “Hello World!”.
+- example of scanf
+    scanf(”%d”, &a); // scan value from keyboard and save in variable.

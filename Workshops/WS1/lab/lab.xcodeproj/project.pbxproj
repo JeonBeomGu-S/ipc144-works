@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4832E4BE2B56D72C00C55071 /* lab1.c in Sources */ = {isa = PBXBuildFile; fileRef = 4832E4BD2B56D72C00C55071 /* lab1.c */; };
+		4880491D2B57222E00438F13 /* diy1.c in Sources */ = {isa = PBXBuildFile; fileRef = 4880491A2B57216600438F13 /* diy1.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		4832E4BA2B56D72C00C55071 /* lab */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab; sourceTree = BUILT_PRODUCTS_DIR; };
 		4832E4BD2B56D72C00C55071 /* lab1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lab1.c; sourceTree = "<group>"; };
+		4880491A2B57216600438F13 /* diy1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = diy1.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				4832E4BD2B56D72C00C55071 /* lab1.c */,
+				4880491A2B57216600438F13 /* diy1.c */,
 			);
 			path = lab;
 			sourceTree = "<group>";
@@ -69,9 +71,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4832E4C12B56D72C00C55071 /* Build configuration list for PBXNativeTarget "lab" */;
 			buildPhases = (
-				4832E4B62B56D72C00C55071 /* Sources */,
 				4832E4B72B56D72C00C55071 /* Frameworks */,
 				4832E4B82B56D72C00C55071 /* CopyFiles */,
+				4880491C2B57222800438F13 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -115,11 +117,11 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4832E4B62B56D72C00C55071 /* Sources */ = {
+		4880491C2B57222800438F13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4832E4BE2B56D72C00C55071 /* lab1.c in Sources */,
+				4880491D2B57222E00438F13 /* diy1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
