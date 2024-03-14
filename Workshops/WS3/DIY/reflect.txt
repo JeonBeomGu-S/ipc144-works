@@ -1,0 +1,59 @@
+I learned about a condition statement and header file this week. First, the condition statement has 2 kinds of statements such as if-else if-else statement and switch statement. The “if-else if-else” statement is very simple and common. For example, if I want to use a condition, I can just put a condition in the “if” statement. After that, if I want to use the opposite condition, I can use the “else if“ or “else” statement. The difference between “else if" and “else” is that “else if” requires an additional condition, but “else” does not require an additional condition. I put the example below this sentence.
+
+```c
+#include <stdio.h>
+int main(void) {
+	int a = 0;
+	if (a < 0) {
+		//It will be printed if a is less than 0.
+		printf("a is less than 0");
+	} else if (a == 0) {
+		//It will be printed if a is 0.
+		// In this example, this condition is true, so it will be printed.
+		printf("a is 0");
+	} else {
+		//It will be printed if a is greater than 0.
+		printf("a is greater than 0");
+	}
+}
+```
+
+In C language, it also has another condition statement with switch statement. It can be used I have a lot of selection point instead of range. For example, I have to when I make online bookstore system, I can use this statement. However, floating-point variable can not use in switch statement, so we have to be careful. I put the example below this sentence.
+
+```c
+#include <stdio.h>
+int main(void) {
+	int bookOpt = 0;
+	scanf("%d", &bookOpt);
+	switch(bookOpt) {
+		case 1:
+			printf("This is a C language book, price is 10$);
+			break;
+		case 2:
+			printf("This is a JAVA book, price is 15$);
+			break;		
+		case 3:
+			printf("This is a Python book, price is 20$);
+			break;
+		case 4:
+			printf("This is a Rust book, price is 25$);
+			break;
+	}
+}
+```
+
+We can check the validation using these condition statements, so we should know this knowledge.
+
+Second, header file is a file that declares the prototype. Header file name should be same as c file name that function is implemented. For example, if I implement functions in “utils.c” file, the header file should be “utils.h”. Using the header file simplifies the prototype declaration in main c file. I put the example of header file structure below this sentence. 
+
+```c
+// utils.h
+#ifndef UTILS_H
+#define UTILS_H
+
+// [return_type] [function_name]([parameters]);
+// example
+int getIntLimited(int min, int max);
+
+#endif
+```
