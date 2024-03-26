@@ -18,21 +18,10 @@
 #include "report.h"
 
 int main(void) {
-//   int noOfStds = getNoOfStudents();
-//   while (noOfStds == 0) {
-//      noOfStds = getNoOfStudents();
-//   }
-//   report(noOfStds);
-    int i = 9, done = 0;
-    while (i > 2) {
-        if (i > 7) {
-            i -= 2;
-        }
-        else if (!done) {
-            done = i = 4;
-        }
-        i--;
-        printf("%d", i);
+    int noOfStds = getNoOfStudents();
+    while (noOfStds == 0) {
+      noOfStds = getNoOfStudents();
     }
-   return 0;
+    report(noOfStds);
+    return 0;
 }
