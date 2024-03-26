@@ -1,0 +1,28 @@
+I learned about what an array is and how to access and modify array elements. First, the array is the collection of similar type of data. For example, the int array is a collection of int data. When we want to declare an array we can declare by following the below code.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+	// first way to declare int array, length is 10
+	int array[10]; 
+	// second way to declare int array
+	int array2[5] = {1, 2, 3, 4, 5};
+	// third way to declare int array, all elements will be 0
+	int array3[5] = {0,};
+	
+	// print array elements
+	for (int i = 0; i < 10; i++) {
+		printf("%d ", array[i]);
+	}
+	
+	// modify array elements
+	array[0] = 100;
+	
+	return 0;
+}
+```
+
+Length in the array means how many data can store in the array. Above code, array’s length is 10, so that array can store 10 int data. Second, we can access the array by using index. Index starts from 0 to (array’s length - 1). Above code, there is example of accessing elements and print. Likewise, there is example of accessing elements and modify.
+
+Also, I learned about const variable. Const variable is non-modifiable variable, so if we want to pass the read-only data, we can use this const variable as argument. However, if you try to modify the const variables, the program will occur the error. Therefore, we have to be careful when we use the const variable.
