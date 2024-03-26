@@ -1,0 +1,49 @@
+# Workshop 5 Reflection
+
+---
+
+I learned about what a structure is and how to access and modify member variable in the structure. First, the structure is used to group variables. For example, student has some information (e.g. studentNo, name, gender, averageGPA, …). The keyword to create a structure is a “struct”.  When we want to declare a structure we can declare by following the below code.
+
+```c
+#include <stdio.h>
+
+struct Student {
+	int studentNo;
+	char name[50];
+	char gender[10];
+	float averageGPA;
+};
+
+int main(void) {
+	// declare Student variable
+	struct Student student;
+	
+	// declare Student variable and initialize
+	struct Student student2 = {126428234, "BEOMGU JEON", "MAN", 4.0f};
+	
+	// print student member variable
+	printf("studentNo: %d", student2.studentNo);
+	printf("name: %s", student2.name);
+	printf("gender: %s", student2.gender);
+	printf("averageGPA: %.1lf", student2.studentNo);
+	
+	return 0;
+}
+```
+
+Struct can have member variables as different type. After structure is declared, I can declare structure instance by using that structure like above code. If I want to access or modify, I can do that by using period(.). Above code, I accessed by using period to print student’s information. Below regular expression is how to access the structure instance’s member. Therefore, if we follow this syntax, we can approach the structure’s member variable when we want to access and modify.
+
+```c
+[structure variable name].[structure member variable name]
+```
+
+Also, we could think in combination with array that we have learned. Structure can be declared array. It can be declared like below code.
+
+```c
+	// declare Student structure array
+	struct Student studentArray[3];
+	
+	// access first eleement of student array
+	printf("First student's studentNo: %d", studentArray[0].studentNo);
+	// ...
+```
