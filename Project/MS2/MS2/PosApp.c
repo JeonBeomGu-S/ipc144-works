@@ -31,7 +31,7 @@ int loadItems(const char filename[]) {
     int result = 0;
     if (fp != NULL) {
         while (1) {
-            result = fscanf(fp, "%19[^,],%59[^,],%lf,%d,%d\n", items[noOfItems].SKU, items[noOfItems].name, &items[noOfItems].price, &items[noOfItems].taxed, &items[noOfItems].quantity);
+            result = fscanf(fp, "%5[^,],%59[^,],%lf,%d,%d\n", items[noOfItems].SKU, items[noOfItems].name, &items[noOfItems].price, &items[noOfItems].taxed, &items[noOfItems].quantity);
             if (result != 5)
                 break;
             noOfItems++;
