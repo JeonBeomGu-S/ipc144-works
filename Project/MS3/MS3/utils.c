@@ -85,3 +85,8 @@ int yes(void) {
             && printf("Only (y) for Yes and (n) for No are acceptable values; retry\n> "));  // lazy evaluation prints the error message
     return (resp == 'Y' || resp == 'y');
 }
+
+void getLine(char cstr[]) {
+    scanf("%[^\n]", cstr);
+    flushKey();
+}

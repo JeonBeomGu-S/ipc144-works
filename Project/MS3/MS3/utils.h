@@ -39,6 +39,7 @@ int yes(void);
 /// Prompts: "Press <ENTER> to continue...." and then waits for user to hit ENTER
 /// </summary>
 void pause2(void);
+void getLine(char cstr[]);
 
 #endif // !SENECA_UTILS_H
 
