@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <string.h>
 #include "POS.h"
 #include "PosApp.h"
-#include <stdlib.h>
+#include "utils.h"
 
 int noOfItems = 0;
 struct Item items[MAX_NO_ITEMS];
@@ -109,4 +110,25 @@ void display(const struct Item* item) {
         printf("N/A\n");
     printf("Stock Qty:   %d\n", item->quantity);
     printf("=============^\n");
+}
+
+int search(void) {
+    char sku[MAX_SKU_LEN] = {0};
+    int i = 0;
+    int index = -1;
+    printf("Sku: ");
+    
+    getLine(sku);
+    
+    if (sku[0] == '\0') {
+        index = -2;
+    }
+    
+    for (i = 0; i < noOfItems; i++) {
+        if (strcmp(sku, items[i].SKU) == 0) {
+            index = i;
+            break;
+        }
+    }
+    return index;
 }
