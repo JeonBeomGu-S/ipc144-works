@@ -26,21 +26,19 @@ void displayAction(const char* action) {
 int loadItems(const char filename[]) {
     displayAction("Loading Items");
     
-    FILE* fp = fopen("posdata.csv", "r");
-    if (fp == 0) {
-        perror("fopen");
-        exit(1);
-    }
+    FILE* fp = fopen(filename, "r");
     
     int result = 0;
-    
-    while (1) {
-        result = fscanf(fp, "%19[^,],%59[^,],%lf,%d,%d\n", items[noOfItems].SKU, items[noOfItems].name, &items[noOfItems].price, &items[noOfItems].taxed, &items[noOfItems].quantity);
-        if (result != 5)
-            break;
-        noOfItems++;
+    if (fp != NULL) {
+        while (1) {
+            result = fscanf(fp, "%19[^,],%59[^,],%lf,%d,%d\n", items[noOfItems].SKU, items[noOfItems].name, &items[noOfItems].price, &items[noOfItems].taxed, &items[noOfItems].quantity);
+            if (result != 5)
+                break;
+            noOfItems++;
+        }
+    } else {
+        printf("Could not open >>%s<<\n", filename);
     }
-    
 
     
     fclose(fp);
