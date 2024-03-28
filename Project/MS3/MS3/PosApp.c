@@ -43,7 +43,7 @@ int loadItems(const char filename[]) {
     
     fclose(fp);
     displayAction("Done!");
-    return 1;
+    return noOfItems;
 }
 void saveItems(const char filename[]) {
     displayAction("Saving Items");
