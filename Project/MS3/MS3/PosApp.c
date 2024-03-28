@@ -96,3 +96,17 @@ double billDisplay(const struct Item* item) {
     printf("| %-14s|%10.2lf | %s |\n", temp, itemCost, item->taxed == 1 ? "Yes" : "   ");
     return itemCost;
 }
+
+void display(const struct Item* item) {
+    printf("=============v\n");
+    printf("Name:        %s\n", item->name);
+    printf("Sku:         %s\n", item->SKU);
+    printf("Price:       %.2lf\n", item->price);
+    printf("Price + tax: ");
+    if (item->taxed == 1)
+        printf("%1.2lf\n", cost(item));
+    else
+        printf("N/A\n");
+    printf("Stock Qty:   %d\n", item->quantity);
+    printf("=============^\n");
+}
