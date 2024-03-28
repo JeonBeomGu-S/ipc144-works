@@ -28,5 +28,7 @@ void POS(void);
 int loadItems(const char filename[]);
 void saveItems(const char filename[]);
 
+double billDisplay(const struct Item* item);
+
 #endif // !SENECA_POSAPP_H
 

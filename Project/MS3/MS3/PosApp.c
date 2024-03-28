@@ -85,3 +85,14 @@ void stockItem(void) {
 void POS(void) {
     displayAction("Point Of Sale");
 }
+
+double billDisplay(const struct Item* item) {
+    char temp[15];
+    double itemCost = cost(item);
+    for (int i = 0; i < 15; i++) {
+        temp[i] = item->name[i];
+    }
+    temp[14] = '\0';
+    printf("| %-14s|%10.2lf | %s |\n", temp, itemCost, item->taxed == 1 ? "Yes" : "   ");
+    return itemCost;
+}
