@@ -47,6 +47,19 @@ int loadItems(const char filename[]) {
 }
 void saveItems(const char filename[]) {
     displayAction("Saving Items");
+    
+    FILE* fp = fopen(filename, "w");
+    
+    int result = 0;
+    if (fp != NULL) {
+        for (int i = 0; i < noOfItems; i++) {
+            fprintf(fp, "%s,%s,%.2lf,%d,%d\n", items[i].SKU, items[i].name, items[i].price, items[i].taxed, items[i].quantity);
+        }
+    } else {
+        printf("Could not open >>%s<<\n", filename);
+    }
+    fclose(fp);
+    displayAction("Done!");
 }
 
 void inventory(void) {
