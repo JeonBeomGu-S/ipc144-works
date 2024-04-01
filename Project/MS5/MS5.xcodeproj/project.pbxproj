@@ -39,6 +39,8 @@
 		482BEB782BBA61710012FE07 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
 		482BEB792BBA61710012FE07 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
 		482BEB7A2BBA61710012FE07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		482BEB7F2BBA68C70012FE07 /* my_output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = my_output.txt; sourceTree = "<group>"; };
+		482BEB802BBA68DF0012FE07 /* correct_output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = correct_output.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,8 @@
 				482BEB782BBA61710012FE07 /* utils.c */,
 				482BEB792BBA61710012FE07 /* utils.h */,
 				482950852BB310880064174E /* main.c */,
+				482BEB7F2BBA68C70012FE07 /* my_output.txt */,
+				482BEB802BBA68DF0012FE07 /* correct_output.txt */,
 			);
 			path = MS5;
 			sourceTree = "<group>";

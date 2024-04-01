@@ -76,9 +76,41 @@ void inventory(void) {
 
 void addItem(void) {
     displayAction("Adding Item");
+    if (noOfItems == MAX_NO_ITEMS) {
+        printf("This system cannot store more that %d different Items in the inventory!\n", MAX_NO_ITEMS);
+        return;
+    }
+    struct Item item;
+    printf("SKU: ");
+    getLine(item.SKU);
+    printf("Name: ");
+    getLine(item.name);
+    printf("Price: ");
+    item.price = getDbl();
+    printf("Is the item Taxed? ");
+    item.taxed = yes();
+    printf("Quantity: ");
+    item.quantity = getIntMM(1, 999, "Quantity");
+    items[noOfItems++] = item;
+    displayAction("Done!");
 }
 void removeItem(void) {
     displayAction("Remove Item");
+    printf("Select an item:\n");
+    printf("-----v--------v--------------------v-------v---v-----v---------v\n");
+    listItems();
+    printf("-----^--------^--------------------^-------^---^-----^---------^\n");
+    printf("Select row: ");
+    int row = 0;
+    row = getIntMM(1, noOfItems, "Row Number");
+    
+    for (int i = row - 1; i < noOfItems; i++) {
+        items[i] = items[i + 1];
+    }
+    
+    noOfItems--;
+    
+    displayAction("Done!");
 }
 void stockItem(void) {
     displayAction("Stock Items");
