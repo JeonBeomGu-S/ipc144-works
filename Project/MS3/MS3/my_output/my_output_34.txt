@@ -1,0 +1,12 @@
+>>>> Loading Items...
+>>>> Done!...
+Sku: 1313
+SKU found at index 13
+Sku: 5656
+SKU found at index 23
+Sku: 9852
+SKU found at index 0
+Sku: 3333
+SKU not found!
+Sku:
+Search was executed 4 times...

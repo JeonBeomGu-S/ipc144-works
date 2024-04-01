@@ -26,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		482BEB572BBA4B200012FE07 /* my_output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = my_output.txt; sourceTree = "<group>"; };
 		483BF7962BB3105F00ADD02B /* MS2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MS2; sourceTree = BUILT_PRODUCTS_DIR; };
 		483BF7992BB3105F00ADD02B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		48878F112BB4D74A00C3EA2C /* posdata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = posdata.csv; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 				48878F152BB4D74B00C3EA2C /* PosUI.h */,
 				48878F122BB4D74A00C3EA2C /* utils.c */,
 				48878F192BB4D74B00C3EA2C /* utils.h */,
+				482BEB572BBA4B200012FE07 /* my_output.txt */,
 			);
 			path = MS2;
 			sourceTree = "<group>";
