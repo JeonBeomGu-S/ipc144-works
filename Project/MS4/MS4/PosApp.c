@@ -88,23 +88,13 @@ void stockItem(void) {
     printf("-----^--------^--------------------^-------^---^-----^---------^\n");
     printf("Select row: ");
     int row = 0;
-    int quantity = 0;
-    do {
-        row = getInt();
-        if (row < 1 || row > noOfItems) {
-            printf("[%d<=Row Number<=%d], retry: ", 1, noOfItems);
-        }
-    } while (row < 1 || row > noOfItems);
+    row = getIntMM(1, noOfItems, "Row Number");
     display(&items[row - 1]);
+    
+    int quantity = 0;
     int maxAddQuantity = MAX_STOCK_NUMBER - items[row - 1].quantity;
     printf("Quantity to add: ");
-    do {
-        quantity = getInt();
-        if (quantity < 1 || quantity > maxAddQuantity) {
-            printf("[%d<=Quantity to Add<=%d], retry: ", 1, maxAddQuantity);
-        }
-    } while (quantity < 1 || quantity > maxAddQuantity);
-    
+    quantity = getIntMM(1, maxAddQuantity, "Quantity to Add");
     items[row - 1].quantity += quantity;
     
     displayAction("Done!");

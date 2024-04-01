@@ -6,13 +6,7 @@
 int menu(void) {
     int selection = 0;
     printf("The Sene-Store\n1- Inventory\n2- Add item\n3- Remove item\n4- Stock item\n5- POS\n0- exit program\n> ");
-    
-    do {
-        if (selection < 0 || selection > 5) {
-            printf("[0<=Selection<=5], retry: ");
-        }
-        selection = getInt();
-    } while (selection < 0 || selection > 5);
+    selection = getIntMM(0, 5, "Selection");
     
     return selection;
 }
