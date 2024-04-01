@@ -86,7 +86,7 @@ void stockItem(void) {
 void POS(void) {
     displayAction("Point Of Sale");
     int index = -1;
-    struct Item bill[MAX_BILL_ITEMS];
+    struct Item* bill[MAX_BILL_ITEMS];
     int numberOfBillItems = 0;
     double totalPrice = 0;
     
@@ -97,7 +97,7 @@ void POS(void) {
             if (items[index].quantity > 0) {
                 items[index].quantity -= 1;
                 totalPrice += cost(&items[index]);
-                bill[numberOfBillItems] = items[index];
+                *(bill + numberOfBillItems) = &items[index];
                 numberOfBillItems++;
                 
                 display(&items[index]);
@@ -120,7 +120,7 @@ void POS(void) {
         printf("+---------------+-----------+-----+\n");
         
         for (int i = 0; i < numberOfBillItems; i++) {
-            billDisplay(&bill[i]);
+            billDisplay(bill[i]);
         }
         
         printf("+---------------^-----------^-----+\n");
