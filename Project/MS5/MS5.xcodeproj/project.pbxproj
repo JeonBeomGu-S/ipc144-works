@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		482950862BB310880064174E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 482950852BB310880064174E /* main.c */; };
+		482BEB7B2BBA61710012FE07 /* PosApp.c in Sources */ = {isa = PBXBuildFile; fileRef = 482BEB712BBA61700012FE07 /* PosApp.c */; };
+		482BEB7C2BBA61710012FE07 /* PosUI.c in Sources */ = {isa = PBXBuildFile; fileRef = 482BEB762BBA61710012FE07 /* PosUI.c */; };
+		482BEB7D2BBA61710012FE07 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 482BEB782BBA61710012FE07 /* utils.c */; };
+		482BEB7E2BBA61710012FE07 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 482BEB7A2BBA61710012FE07 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,16 @@
 /* Begin PBXFileReference section */
 		482950822BB310880064174E /* MS5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MS5; sourceTree = BUILT_PRODUCTS_DIR; };
 		482950852BB310880064174E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		482BEB712BBA61700012FE07 /* PosApp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PosApp.c; sourceTree = "<group>"; };
+		482BEB722BBA61700012FE07 /* PosApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosApp.h; sourceTree = "<group>"; };
+		482BEB732BBA61700012FE07 /* posdataOrigin.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = posdataOrigin.csv; sourceTree = "<group>"; };
+		482BEB742BBA61700012FE07 /* POS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POS.h; sourceTree = "<group>"; };
+		482BEB752BBA61700012FE07 /* posdata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = posdata.csv; sourceTree = "<group>"; };
+		482BEB762BBA61710012FE07 /* PosUI.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PosUI.c; sourceTree = "<group>"; };
+		482BEB772BBA61710012FE07 /* PosUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosUI.h; sourceTree = "<group>"; };
+		482BEB782BBA61710012FE07 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		482BEB792BBA61710012FE07 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		482BEB7A2BBA61710012FE07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,16 @@
 		482950842BB310880064174E /* MS5 */ = {
 			isa = PBXGroup;
 			children = (
+				482BEB7A2BBA61710012FE07 /* main.c */,
+				482BEB742BBA61700012FE07 /* POS.h */,
+				482BEB712BBA61700012FE07 /* PosApp.c */,
+				482BEB722BBA61700012FE07 /* PosApp.h */,
+				482BEB752BBA61700012FE07 /* posdata.csv */,
+				482BEB732BBA61700012FE07 /* posdataOrigin.csv */,
+				482BEB762BBA61710012FE07 /* PosUI.c */,
+				482BEB772BBA61710012FE07 /* PosUI.h */,
+				482BEB782BBA61710012FE07 /* utils.c */,
+				482BEB792BBA61710012FE07 /* utils.h */,
 				482950852BB310880064174E /* main.c */,
 			);
 			path = MS5;
@@ -119,6 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482BEB7E2BBA61710012FE07 /* main.c in Sources */,
+				482BEB7C2BBA61710012FE07 /* PosUI.c in Sources */,
+				482BEB7D2BBA61710012FE07 /* utils.c in Sources */,
+				482BEB7B2BBA61710012FE07 /* PosApp.c in Sources */,
 				482950862BB310880064174E /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

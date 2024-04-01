@@ -9,9 +9,10 @@
 
 
 #include <stdio.h>
+#include "POS.h"
+#include "PosUI.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(void) {
+    runPos("posdata.csv");
     return 0;
 }
