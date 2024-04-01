@@ -91,7 +91,7 @@ void POS(void) {
     double totalPrice = 0;
     
     // customer selection
-    while (numberOfBillItems < 10) {
+    while (numberOfBillItems < MAX_BILL_ITEMS) {
         index = search();
         if (0 < index && index < MAX_NO_ITEMS) {
             if (items[index].quantity > 0) {
