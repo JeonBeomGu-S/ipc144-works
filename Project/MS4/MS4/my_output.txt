@@ -1,0 +1,75 @@
+>>>> Loading Items...
+>>>> Done!...
+The Sene-Store
+1- Inventory
+2- Add item
+3- Remove item
+4- Stock item
+5- POS
+0- exit program
+> 4
+>>>> Stock Items...
+Select an item:
+-----v--------v--------------------v-------v---v-----v---------v
+ Row | SKU    | Item Name          | Price |TX | Qty |   Total |
+-----|--------|--------------------|-------|---|-----|---------|
+   1 |   9852 | Seedless Grapes    | 10.56 |   |  20 |  211.20 |
+   2 |   9318 | Tide Detergent     | 16.99 | T |  10 |  191.99 |
+   3 |   5496 | Veal Parmigiana    |  5.49 | T |   3 |   18.61 |
+   4 |   3854 | Beffsteak Pie      |  5.29 | T |  40 |  239.11 |
+   5 |   5228 | 7up 12 pack        |  6.49 | T |  20 |  146.67 |
+   6 |   3456 | Bic Pen(Blue)      |  1.49 | T | 580 |  976.55 |
+   7 |   7913 | Banana             |  0.44 |   | 100 |   44.00 |
+   8 |   3695 | Honeydew Melon     |  5.99 |   |  20 |  119.80 |
+   9 |   1679 | Jack's Apple Juice |  1.50 |   |  80 |  120.00 |
+-----^--------^--------------------^-------^---^-----^---------^
+Select row: abc
+Invalid Integer, try again: 0
+[1<=Row Number<=9], retry: 10
+[1<=Row Number<=9], retry: 6
+=============v
+Name:        Bic Pen(Blue)
+Sku:         3456
+Price:       1.49
+Price + tax: 1.68
+Stock Qty:   580
+=============^
+Quantity to add: abc
+Invalid Integer, try again: 0
+[1<=Quantity to Add<=419], retry: 500
+[1<=Quantity to Add<=419], retry: 200
+>>>> Done!...
+The Sene-Store
+1- Inventory
+2- Add item
+3- Remove item
+4- Stock item
+5- POS
+0- exit program
+> 1
+>>>> List Items...
+ Row | SKU    | Item Name          | Price |TX | Qty |   Total |
+-----|--------|--------------------|-------|---|-----|---------|
+   1 |   9852 | Seedless Grapes    | 10.56 |   |  20 |  211.20 |
+   2 |   9318 | Tide Detergent     | 16.99 | T |  10 |  191.99 |
+   3 |   5496 | Veal Parmigiana    |  5.49 | T |   3 |   18.61 |
+   4 |   3854 | Beffsteak Pie      |  5.29 | T |  40 |  239.11 |
+   5 |   5228 | 7up 12 pack        |  6.49 | T |  20 |  146.67 |
+   6 |   3456 | Bic Pen(Blue)      |  1.49 | T | 780 | 1313.29 |
+   7 |   7913 | Banana             |  0.44 |   | 100 |   44.00 |
+   8 |   3695 | Honeydew Melon     |  5.99 |   |  20 |  119.80 |
+   9 |   1679 | Jack's Apple Juice |  1.50 |   |  80 |  120.00 |
+-----^--------^--------------------^-------^---^-----^---------^
+                               Total Asset: $  |       2404.67 |
+-----------------------------------------------^---------------^
+The Sene-Store
+1- Inventory
+2- Add item
+3- Remove item
+4- Stock item
+5- POS
+0- exit program
+> 0
+>>>> Saving Items...
+>>>> Done!...
+Goodbye!

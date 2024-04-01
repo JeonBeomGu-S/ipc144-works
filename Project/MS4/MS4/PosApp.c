@@ -82,6 +82,32 @@ void removeItem(void) {
 }
 void stockItem(void) {
     displayAction("Stock Items");
+    printf("Select an item:\n");
+    printf("-----v--------v--------------------v-------v---v-----v---------v\n");
+    listItems();
+    printf("-----^--------^--------------------^-------^---^-----^---------^\n");
+    printf("Select row: ");
+    int row = 0;
+    int quantity = 0;
+    do {
+        row = getInt();
+        if (row < 1 || row > noOfItems) {
+            printf("[%d<=Row Number<=%d], retry: ", 1, noOfItems);
+        }
+    } while (row < 1 || row > noOfItems);
+    display(&items[row - 1]);
+    int maxAddQuantity = MAX_STOCK_NUMBER - items[row - 1].quantity;
+    printf("Quantity to add: ");
+    do {
+        quantity = getInt();
+        if (quantity < 1 || quantity > maxAddQuantity) {
+            printf("[%d<=Quantity to Add<=%d], retry: ", 1, maxAddQuantity);
+        }
+    } while (quantity < 1 || quantity > maxAddQuantity);
+    
+    items[row - 1].quantity += quantity;
+    
+    displayAction("Done!");
 }
 void POS(void) {
     displayAction("Point Of Sale");
