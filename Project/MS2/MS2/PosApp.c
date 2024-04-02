@@ -14,7 +14,8 @@ double cost(const struct Item* item) {
 void listItems(void) {
     printf(" Row | SKU    | Item Name          | Price |TX | Qty |   Total |\n-----|--------|--------------------|-------|---|-----|---------|\n");
     
-    for (int i = 0; i < noOfItems; i++) {
+    int i = 0;
+    for (i = 0; i < noOfItems; i++) {
         printf("%4d | %6s | %-18s |%6.2lf | %c | %3d |%8.2lf |\n", (i + 1), items[i].SKU, items[i].name, items[i].price, items[i].taxed == 1 ? 'T' : ' ', items[i].quantity, cost(&items[i]) * items[i].quantity);
     }
     printf("-----^--------^--------------------^-------^---^-----^---------^\n");
@@ -54,7 +55,8 @@ void inventory(void) {
     double tav = 0;
     displayAction("List Items");
     listItems();
-    for (int i = 0; i < noOfItems; i++) {
+    int i = 0;
+    for (i = 0; i < noOfItems; i++) {
         tav += cost(&items[i]) * items[i].quantity ;
     }
     printf("                               Total Asset: $  | %13.2lf |\n-----------------------------------------------^---------------^\n", tav);
