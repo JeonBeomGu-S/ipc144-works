@@ -18,6 +18,7 @@ void listItems(void) {
     for (int i = 0; i < noOfItems; i++) {
         printf("%4d | %6s | %-18s |%6.2lf | %c | %3d |%8.2lf |\n", (i + 1), items[i].SKU, items[i].name, items[i].price, items[i].taxed == 1 ? 'T' : ' ', items[i].quantity, cost(&items[i]) * items[i].quantity);
     }
+    printf("-----^--------^--------------------^-------^---^-----^---------^\n");
 }
 
 void displayAction(const char* action) {
@@ -70,7 +71,6 @@ void inventory(void) {
     for (int i = 0; i < noOfItems; i++) {
         tav += cost(&items[i]) * items[i].quantity ;
     }
-    printf("-----^--------^--------------------^-------^---^-----^---------^\n");
     printf("                               Total Asset: $  | %13.2lf |\n-----------------------------------------------^---------------^\n", tav);
 }
 
@@ -99,7 +99,6 @@ void removeItem(void) {
     printf("Select an item:\n");
     printf("-----v--------v--------------------v-------v---v-----v---------v\n");
     listItems();
-    printf("-----^--------^--------------------^-------^---^-----^---------^\n");
     printf("Select row: ");
     int row = 0;
     row = getIntMM(1, noOfItems, "Row Number");
@@ -117,7 +116,6 @@ void stockItem(void) {
     printf("Select an item:\n");
     printf("-----v--------v--------------------v-------v---v-----v---------v\n");
     listItems();
-    printf("-----^--------^--------------------^-------^---^-----^---------^\n");
     printf("Select row: ");
     int row = 0;
     row = getIntMM(1, noOfItems, "Row Number");
