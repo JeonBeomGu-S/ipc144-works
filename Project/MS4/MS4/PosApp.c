@@ -85,7 +85,6 @@ void stockItem(void) {
     printf("Select an item:\n");
     printf("-----v--------v--------------------v-------v---v-----v---------v\n");
     listItems();
-    printf("-----^--------^--------------------^-------^---^-----^---------^\n");
     printf("Select row: ");
     int row = 0;
     row = getIntMM(1, noOfItems, "Row Number");
