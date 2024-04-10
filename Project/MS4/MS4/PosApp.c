@@ -94,9 +94,13 @@ void stockItem(void) {
     
     int quantity = 0;
     int maxAddQuantity = MAX_STOCK_NUMBER - items[row - 1].quantity;
-    printf("Quantity to add: ");
-    quantity = getIntMM(1, maxAddQuantity, "Quantity to Add");
-    items[row - 1].quantity += quantity;
+    if (maxAddQuantity > 0) {
+        printf("Quantity to add: ");
+        quantity = getIntMM(1, maxAddQuantity, "Quantity to Add");
+        items[row - 1].quantity += quantity;
+    } else {
+        printf("Already Full!\n");
+    }
     
     displayAction("Done!");
 }
