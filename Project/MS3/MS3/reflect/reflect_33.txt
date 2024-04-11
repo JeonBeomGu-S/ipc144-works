@@ -1,0 +1,22 @@
+## Reflection
+
+- Function: display
+- Required Skill: print and align
+
+Milestone 3.3 needs to implement a display function. To implement this function, I need to know how to print. It is very simple. I just need to remind myself how to align the string and numbers. This is an example of how to align.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    double dnum = 1.23456;
+    char test[6] = "apple";
+    
+    // %.2lf means print up to two decimal places
+    printf("%.2lf\n", dnum);
+    // left-justified 10 spaces
+    printf("%-10s\n", test);
+    // right-justified 10 spaces
+    printf("%10s\n", test);
+}
+```

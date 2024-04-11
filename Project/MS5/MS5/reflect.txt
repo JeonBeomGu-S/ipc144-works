@@ -1,0 +1,6 @@
+## Reflection
+
+- Function: addItem and removeItem
+- Required Skill: Things I have written in other reflection files before
+
+Milestone 5 needs to implement a addItem and removeItem function. I just reviewed a few things I have written in other reflection files before. Just I need to know the yes function in the utils file. It inputs from the user yes or no. If the user inputs the ‘Y’ or ‘y’, it will return 1, but if the user inputs the ‘N’ or ‘n’, it will return 0. In addition, I realized that gcc compiler in the matrix environment requires that for loop variables need to be declared before using the for loop when I tried to submit the file. After I submitted the file by using the matrix, I got an error.txt file, and it told me what the error was. This milestone made me look back at errors that I had missed in other milestones.

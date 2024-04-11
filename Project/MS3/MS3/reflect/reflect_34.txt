@@ -1,0 +1,29 @@
+## Reflection
+
+- Function: search
+- Required Skill: cString (strcmp)
+
+Milestone 3.4 needs to implement a search function. To implement this function, I need to know how to access array elements and compare the strings. I can access array elements by using an index. Also, I can use the strcmp function in string.h header file to compare the strings. This is an example of how to access elements and compare the strings.
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    char test1[6] = "apple";
+    char test2[6] = "apple";
+    int i = 0;
+    // access the elements of array and print
+    for (i = 0; i < 6; i++) {
+        printf("%c", test1[i]);
+    }
+    printf("\n");
+    // compare string
+    // if strings are same, strcmp function will return 0.
+    if (strcmp(test1, test2) == 0) {
+        printf("It is same\n");
+    } else {
+        printf("It is different\n");
+    }
+}
+```

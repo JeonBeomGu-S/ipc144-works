@@ -39,6 +39,7 @@
 		48878F0A2BB4D57A00C3EA2C /* PosApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosApp.h; sourceTree = "<group>"; };
 		48878F0B2BB4D57A00C3EA2C /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		48878F102BB4D71700C3EA2C /* correct_output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = correct_output.txt; sourceTree = "<group>"; };
+		48C1C9C62BBCE26200F521A9 /* reflect.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reflect.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 				48878F072BB4D57A00C3EA2C /* utils.h */,
 				483BF7862BB3104B00ADD02B /* main.c */,
 				482BEB562BBA49D70012FE07 /* my_output.txt */,
+				48C1C9C62BBCE26200F521A9 /* reflect.txt */,
 			);
 			path = MS1;
 			sourceTree = "<group>";

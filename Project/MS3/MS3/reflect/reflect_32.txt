@@ -1,0 +1,28 @@
+## Reflection
+
+- Function: billDisplay
+- Required Skill: cString
+
+Milestone 3.2 needs to implement a billDisplay function. To implement this function, I need to know how to copy the string, so I need to understand the char array. Char array consists of each character and the last element is ‘\0’. The requirement in milestone 3.2 is that I need to print  the first 14 characters in the item name. Therefore, I made a  temp array of size 15. After that, I copied each character from the original name to the temp array, and I changed the last element to ‘\0’. In addition, the ternary operator(?) is optional, but it can simplify the code. This is an example of how to use the ternary operator.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    int number = 10;
+    int result = 0;
+    // 1. if-else
+    if (number == 10) {
+        result = 1;
+    } else {
+        result = 0;
+    }
+    printf("result(if-else): %d\n", result);
+    /*
+        2. ternary operator
+        [condition] ? [result when condition is true] : [result when condition is false]
+    */
+    result = number == 10 ? 1 : 0;
+    printf("result(ternary operator): %d\n", result);
+}
+```

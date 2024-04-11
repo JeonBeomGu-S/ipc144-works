@@ -1,0 +1,44 @@
+## Reflection
+
+- Function: POS
+- Required Skill: struct array and struct pointer array
+
+Milestone 3.5 needs to implement a POS function. To implement this function, I need to know how to use struct array (for version 1) and struct pointer array (for version 2). This is an example of how to use struct array and struct pointer array.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    // declare struct array
+    struct Item bill1[2] = {
+        {"9852","Seedless Grapes",10.56,0,20},
+        {"9318","Tide Detergent",16.99,1,10}
+    };
+    // declare struct pointer array
+    struct Item* bill2[2] = {
+        &bill1[0],
+        &bill1[1]
+    };
+    
+    // access element of struct array
+    bill1[0].price = 100;
+    printf("bill1[0].price: %.2lf\n", bill1[0].price);
+    /*
+        access element of struct pointer array
+        *([struct pointer array name] + [number]) means nth elements of array
+        (*bill2) > 0th element of bill2 (=bill1[0])
+        (*bill2 + 1) > 1st element of bill2 (=bill[1])
+    */
+    (*bill2)->price = 200;
+    (*(bill2 + 1))->price = 300;
+    printf("*bill2->price: %.2lf\n", (*bill2)->price);
+    printf("*(bill2 + 1)->price: %.2lf\n", (*(bill2 + 1))->price);
+    
+    // it shows why struct pointer array will use less memory than struct array
+    printf("bill1 size: %d\n", sizeof(bill1));
+    printf("bill1 size: %d\n", sizeof(bill2));
+    return 0;
+}
+```
+
+The explanation in Github said version 2 will use less memory, so I thought I had to use malloc functions, but I asked Fardad, and I do not need them. Therefore, I was wondering what is the different between a struct and a struct pointer array, so I checked the size of the struct and the size of the struct pointer. I got the above result.

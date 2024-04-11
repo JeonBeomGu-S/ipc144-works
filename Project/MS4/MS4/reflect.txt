@@ -1,0 +1,19 @@
+## Reflection
+
+- Function: stockItem
+- Required Skill: struct array
+
+Milestone 4 needs to implement a stockItem function. To implement this function, I need to know how to access struct array element members. First, I need to input the row number from the user. At that time, I needed to be careful row number and array index were different. The array index is less than the row number by 1. Also, I need to check validation by using the validation check function(getIntMM) in the utils file. After that, the user will input the quantity, and I also need to check validation again. This is an example of how to access struct array element members.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    struct Item items[5];
+    // it changes the quantity of the first element of items array.
+    items[0].quantity = 0;
+    printf("item[0].quantity: %d\n", items[0].quantity);
+        items[0].quantity = 100;
+    printf("item[0].quantity: %d\n", items[0].quantity);
+}
+```

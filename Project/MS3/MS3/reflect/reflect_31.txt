@@ -1,0 +1,24 @@
+## Reflection
+
+- Function: saveItems
+- Required Skill: File writing
+
+Milestone 3.1 needs to implement a saveItems function. To implement this function, I need to know how to write into the file. It is similar to reading the file before I implemented it in milestone 2. This is an example of writing into the file.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    struct Item item;
+    // declare file pointer
+    FILE* fp = fopen("item_price.txt", "r");
+    if (fp != NULL) {
+        // read the file and store to variable
+        // fscanf([file pointer], [regular expression], [variable1, ...]);
+        fprintf(fp, "%d,%d", item.SKU, item.item.price);
+    } else {
+        // exception handling
+        printf("file open error!");
+    }
+}
+```

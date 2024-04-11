@@ -32,6 +32,11 @@
 		482BEB5B2BBA4C910012FE07 /* my_output_35.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = my_output_35.txt; sourceTree = "<group>"; };
 		482BEB5C2BBA4C910012FE07 /* my_output_32.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = my_output_32.txt; sourceTree = "<group>"; };
 		482BEB5D2BBA4C910012FE07 /* my_output_33.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = my_output_33.txt; sourceTree = "<group>"; };
+		486C9E342BC5005D000158F9 /* reflect_31.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reflect_31.txt; sourceTree = "<group>"; };
+		486C9E352BC50088000158F9 /* reflect_32.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reflect_32.txt; sourceTree = "<group>"; };
+		486C9E362BC50088000158F9 /* reflect_35.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reflect_35.txt; sourceTree = "<group>"; };
+		486C9E372BC50088000158F9 /* reflect_33.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reflect_33.txt; sourceTree = "<group>"; };
+		486C9E382BC50088000158F9 /* reflect_34.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reflect_34.txt; sourceTree = "<group>"; };
 		48878F4A2BB4FBA900C3EA2C /* main31.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main31.c; sourceTree = "<group>"; };
 		48878F4B2BB4FBA900C3EA2C /* main33.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main33.c; sourceTree = "<group>"; };
 		48878F4C2BB4FBA900C3EA2C /* main35.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main35.c; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 				48878F6A2BB4FFD900C3EA2C /* utils.h */,
 				48878F492BB4FB5200C3EA2C /* correct_output */,
 				482BEB582BBA4BDD0012FE07 /* my_output */,
+				486C9E332BC50039000158F9 /* reflect */,
 				48878F482BB4FB3B00C3EA2C /* test_main */,
 			);
 			path = MS3;
@@ -109,6 +115,18 @@
 				482BEB5B2BBA4C910012FE07 /* my_output_35.txt */,
 			);
 			path = my_output;
+			sourceTree = "<group>";
+		};
+		486C9E332BC50039000158F9 /* reflect */ = {
+			isa = PBXGroup;
+			children = (
+				486C9E342BC5005D000158F9 /* reflect_31.txt */,
+				486C9E352BC50088000158F9 /* reflect_32.txt */,
+				486C9E372BC50088000158F9 /* reflect_33.txt */,
+				486C9E382BC50088000158F9 /* reflect_34.txt */,
+				486C9E362BC50088000158F9 /* reflect_35.txt */,
+			);
+			path = reflect;
 			sourceTree = "<group>";
 		};
 		48878F482BB4FB3B00C3EA2C /* test_main */ = {

@@ -39,6 +39,7 @@
 		482BEB6B2BBA530F0012FE07 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
 		482BEB6F2BBA59A10012FE07 /* correct_output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = correct_output.txt; sourceTree = "<group>"; };
 		482BEB702BBA59AD0012FE07 /* my_output.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = my_output.txt; sourceTree = "<group>"; };
+		48DA06FC2BC6602E00997CDB /* reflect.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reflect.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 				482BEB672BBA530E0012FE07 /* utils.h */,
 				482BEB6F2BBA59A10012FE07 /* correct_output.txt */,
 				482BEB702BBA59AD0012FE07 /* my_output.txt */,
+				48DA06FC2BC6602E00997CDB /* reflect.txt */,
 			);
 			path = MS4;
 			sourceTree = "<group>";

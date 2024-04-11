@@ -1,0 +1,21 @@
+## Reflection
+
+Milestone 1 is about the implementation of a POS mock-up application. This milestone is divided by declaring the constants part and implementing mockup functions. To implement this milestone, we should know a few things. One of the knowledge is what a header file is and how to use this. The header is the file that declares the prototype and global variables. We can also use the define keyword in the header file. This is one example of the header files.
+
+```c
+#ifndef EXAMPLE_HEADER_H
+#define EXAMPLE_HEADER_H
+
+// declare constant
+#define MAX_INTEGER 2147483647
+
+// declare functions
+void exampleFunction1(void);
+void exampleFunction2(int number);
+int exampleFunction3(void);
+int exampleFunction4(int number);
+
+#endif // !EXAMPLE_HEADER_H
+```
+
+Another one is do-while loop feature. First, we display the menu after start to run the program. After that, we have to select the menu option from a user. That time, if user do not select exit option, this program have to be continued. Therefore, to implement this feature, we need to use loop feature. There are for, while, and do-while loop, but I think do-while is good option for implementing this application, so I selected this. The difference between while and do-while is when to check the condition. While statement checks before run the loop block, but do-while statement checks after the loop block. Therefore, do-while statement ensure that block will run at least one time.

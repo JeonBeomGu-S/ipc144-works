@@ -38,6 +38,7 @@
 		48878F172BB4D74B00C3EA2C /* POS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POS.h; sourceTree = "<group>"; };
 		48878F182BB4D74B00C3EA2C /* PosUI.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PosUI.c; sourceTree = "<group>"; };
 		48878F192BB4D74B00C3EA2C /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		48D5E38F2BC3869000ED1B79 /* reflect.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reflect.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 				48878F122BB4D74A00C3EA2C /* utils.c */,
 				48878F192BB4D74B00C3EA2C /* utils.h */,
 				482BEB572BBA4B200012FE07 /* my_output.txt */,
+				48D5E38F2BC3869000ED1B79 /* reflect.txt */,
 			);
 			path = MS2;
 			sourceTree = "<group>";

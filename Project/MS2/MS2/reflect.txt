@@ -1,0 +1,45 @@
+## Reflection
+
+Milestone2 needs to implement four functions. First, I implemented cost function. It is very simple function. To implement this function, I need to know how to access the struct members. It has two way to access struct members, one is using dot sign(.), and another one is using arrow sign(->). Dot sign is for struct, arrow sign is for struct pointer. This is example of access members of struct.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    struct Item item;
+    struct Item* itemPtr;
+    
+    // using dot sign
+    printf("price: %lf", item.price);
+    // using arrow sign
+    printf("price: %lf", item->price);
+}
+```
+
+Second, I implemented loadItem function. To implement this function, I need to know how to read file in C language. To read the file, I must open the file before reading. After that, I can read the file by using fscanf function. This is example of read the file. I struggled when I am implementing this function because of regular expression. The item name can have whitespace, but if fscanf face the whitespace, it will just finish reading. Therefore, I searched about regular expression on Google, and I found the solution. It is using the “[^,]”. If I use it, fscanf will read until face the comma.
+
+```c
+#include <stdio.h>
+
+int main(void) {
+    struct Item item;
+    // declare file pointer
+    FILE* fp = fopen("item_price.txt", "r");
+    if (fp != NULL) {
+        // read the file and store to variable
+        // fscanf([file pointer], [regular expression], [variable1, ...]);
+        fscanf(fp, "%d,%d", item->SKU, item->item.price);
+    } else {
+        // exception handling
+        printf("file open error!");
+    }
+    // print
+    printf("sku: %d, price: %d", item->SKU, item->item.price);
+}
+```
+
+Third, I implemented listItems function. This is very simple function. It just print the items array, so I need to know how to access items, and loop statement.
+
+Last, I implemented inventory function. This is also very simple function because I already implemented above three function, so I just call the those functions, and calculate the total asset.
+
+In conclusion, most difficult part is finding how to read including whitespace. I need to study regular expression more.
